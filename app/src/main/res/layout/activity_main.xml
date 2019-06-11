@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_canny"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="使用相机及Canny变换"
+        />
+
+    <Button
+        android:id="@+id/button_jni"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_canny"
+        android:text="调用JNI函数"
+        />
+
+    <Button
+        android:id="@+id/button_jni_json"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_jni"
+        android:text="JNI+第三方json库"
+        />
+
+    <Button
+        android:id="@+id/button_ndk_test"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_jni_json"
+        android:text="JNI+OpenCV"
+        />
+
+    <Button
+        android:id="@+id/button_rectify"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_ndk_test"
+        android:text="OpenCV文档纠正"
+        />
+
+</RelativeLayout>

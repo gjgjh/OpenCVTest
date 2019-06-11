@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RectificationActivity">
+
+    <com.example.opencvtest.DrawImageView
+        android:id="@+id/raw_image"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select photo"
+            />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear roi"
+            />
+
+        <Button
+            android:id="@+id/rectify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rectify"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/rectified"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        />
+
+</LinearLayout>
